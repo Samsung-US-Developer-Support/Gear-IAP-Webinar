@@ -1,6 +1,6 @@
+# Gear-IAP-Webinar
+
+This application is developed to show case the functionality of Gear IAP
+
 -----------------------------------------------------------------------------
 
-Project: Gear-IAP-Webinar
-
-This application is developed to show case the capability of functionality of Gear IAP
------------------------------------------------------------------------------
