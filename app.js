@@ -53,7 +53,7 @@ function optionList(){
 function onNonConsumableClick(){
 
 	tau.changePage('#buy');
-	document.getElementById('buy_btn').addEventListener('click', onByNonConsume);
+	document.getElementById('buy_btn').addEventListener('click', onBuyNonConsume);
 	document.getElementById('purchase_btn').addEventListener('click', onGetPurchasedItems);
 }
 
@@ -61,7 +61,7 @@ function onNonConsumableClick(){
 function onConsumableClick(){
 	
 	tau.changePage('#buy');
-	document.getElementById('buy_btn').addEventListener('click', onByConsume);
+	document.getElementById('buy_btn').addEventListener('click', onBuyConsume);
 	document.getElementById('purchase_btn').addEventListener('click', onGetPurchasedItems);	
 }
 
@@ -69,7 +69,7 @@ function onConsumableClick(){
 function onSubscriptionClick(){
 	
 	tau.changePage('#buy');
-	document.getElementById('buy_btn').addEventListener('click', onBySubs);
+	document.getElementById('buy_btn').addEventListener('click', onBuySubs);
 	document.getElementById('purchase_btn').addEventListener('click', onGetPurchasedItems);	
 }
 
@@ -133,15 +133,15 @@ function getItemeErorCallback(error) {
 
 /********************** Purchase API start ****************************/
 
-function onByNonConsume() {
+function onBuyNonConsume() {
 	webapis.inapppurchase.startPayment(itm_id[0], IAPmode, purchaseSuccessCallback, purchaseErrorCallback);
 }
 
-function onByConsume() {
+function onBuyConsume() {
 	webapis.inapppurchase.startPayment(itm_id[1], IAPmode, purchaseSuccessCallback, purchaseErrorCallback);
 }
 
-function onBySubs() {
+function onBuySubs() {
 	webapis.inapppurchase.startPayment(itm_id[2], IAPmode, purchaseSuccessCallback, purchaseErrorCallback);
 }
 
